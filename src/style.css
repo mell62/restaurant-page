@@ -1,0 +1,37 @@
+:root{
+    --white: #fffffe;
+    --text: #2b2c34;
+    --primary: #6246ea;
+    --secondary: #d1d1e9;
+    --tertiary: #e45858;
+}
+
+body{
+    background-color: var(--white);
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    width: 10rem;
+}
+
+.hero-text-the{
+    color: var(--text);
+    padding-top: 1.2rem;
+}
+
+.hero-text{
+    font-family: 'Rowdies', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--primary);
+    line-height: 1.2rem;
+    margin-left: -0.5rem;
+}
