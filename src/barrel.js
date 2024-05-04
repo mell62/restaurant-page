@@ -1,1 +1,1 @@
-export { fillHero, fillButtons } from './base.js';
+export { fillHero, fillButtons, styleButtons } from './base.js';
