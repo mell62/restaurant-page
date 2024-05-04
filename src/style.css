@@ -4,6 +4,7 @@
     --primary: #6246ea;
     --secondary: #d1d1e9;
     --tertiary: #e45858;
+    font-family: 'Ubuntu Sans', sans-serif;
 }
 
 body{
@@ -21,6 +22,8 @@ body{
     display: flex;
     align-items: center;
     width: 10rem;
+    padding-bottom: 2rem;
+    user-select: none;
 }
 
 .hero-text-the{
@@ -39,5 +42,30 @@ body{
 
 nav{
     display: flex;
+    justify-content: center;
+    gap: 8rem;
+    width: 100%;
+    font-size: 1.1rem;
 }
 
+button{
+    appearance: none;
+    background-color: var(--white);
+    border: 0.15rem solid var(--white);
+    transition: 0.2s ease-in-out;
+    padding: 1rem;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 400;
+}
+
+button:hover{
+    border-bottom: 0.15rem solid var(--primary);
+    transition: 0.2s ease-in-out;
+}
+
+.button-active{
+    border-bottom: 0.15rem solid var(--primary);
+    color: var(--primary);
+    transition: 0.2s ease-in-out;
+}
