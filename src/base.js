@@ -17,7 +17,7 @@ function fillHero(){
     heroTextFirst.textContent = "the";
     heroTextSecond.textContent = "boba cube.";
 
-    content.appendChild(hero);
+    content.insertBefore(hero, nav);
     heroImageContainer.appendChild(heroImage);
     hero.appendChild(heroImageContainer);
     hero.appendChild(heroText);
