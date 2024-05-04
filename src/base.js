@@ -1,5 +1,5 @@
 import logoBubbleTea from './images/bubble-tea-logo.png';
-export { fillHero };
+export { fillHero, fillButtons };
 
 const content = document.querySelector("#content");
 const nav = document.querySelector("nav");
@@ -26,4 +26,19 @@ function fillHero(){
     hero.classList.toggle("hero");
     heroTextFirst.classList.toggle("hero-text-the");
     heroText.classList.toggle("hero-text");
+}
+
+function fillButtons(){
+    const homeButton = document.createElement("button");
+    const menuButton = document.createElement("button");
+    const contactButton = document.createElement("button");
+
+    homeButton.textContent = "Home";
+    menuButton.textContent = "Menu";
+    contactButton.textContent = "Contact";
+
+    nav.appendChild(homeButton);
+    nav.appendChild(menuButton);
+    nav.appendChild(contactButton);
+
 }
