@@ -1,0 +1,1 @@
+export { fillHero } from './base.js';
