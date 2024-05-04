@@ -1,5 +1,6 @@
 import './style.css';
 import './modern-normalize.css';
-import { fillHero } from './barrel.js';
+import { fillHero, fillButtons } from './barrel.js';
 
 fillHero();
+fillButtons();
