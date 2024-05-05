@@ -1,5 +1,5 @@
 import logoBubbleTea from './images/bubble-tea-logo.png';
-export { fillHero, fillButtons, styleButtons };
+export { fillHero, fillButtons, styleButtons, activateHome };
 
 const content = document.querySelector("#content");
 const nav = document.querySelector("nav");
@@ -51,4 +51,11 @@ function styleButtons(){
             button.classList.add("button-active");
         })
     })
+}
+
+function activateHome(){
+    const buttons = document.querySelectorAll("button");
+    const buttonsArray = Array.from(buttons);
+
+    buttonsArray[0].classList.add("button-active");
 }
