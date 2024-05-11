@@ -119,3 +119,23 @@ button:hover {
 .home-text {
   width: 30rem;
 }
+
+.home-btn {
+  appearance: none;
+  transition: 0.5s ease-in-out;
+  border-radius: 2rem;
+  border: 0.14rem solid var(--primary);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  box-shadow: inset 0 0 0 0 var(--primary);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.home-btn:hover {
+  box-shadow: inset 0 -4rem 0 0 var(--primary);
+  color: var(--white);
+}
+
+.home-btn:active {
+  transform: scale(0.9);
+}
