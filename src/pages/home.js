@@ -21,7 +21,7 @@ function fillHome() {
     "Indulge in the perfect blend of flavors and fun at our cafe. Sip, relax, and let the good times bubble up!";
   bobaIcon.src = bobaImg;
   bobaIcon.setAttribute("style", "width:2rem;");
-  homeBtn.textContent = "book a bubble!";
+  homeBtn.textContent = "Book a Bubble!";
 
   homeHeroLogo.classList.add("home-hero-logo");
   homeHeroLogoThe.classList.add("home-hero-logo-the");
