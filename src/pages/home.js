@@ -12,14 +12,16 @@ function fillHome() {
   const homeHeroLogoBobaCube = document.createElement("div");
   const homeText = document.createElement("div");
   const bobaIcon = document.createElement("img");
+  const homeBtn = document.createElement("button");
 
   homeHeroText.textContent = "experience";
   homeHeroLogoThe.textContent = "the";
   homeHeroLogoBobaCube.textContent = "boba cube.";
   homeText.textContent =
-    " Indulge in the perfect blend of flavors and fun at our cafe. Sip, relax, and let the good times bubble up!";
+    "Indulge in the perfect blend of flavors and fun at our cafe. Sip, relax, and let the good times bubble up!";
   bobaIcon.src = bobaImg;
   bobaIcon.setAttribute("style", "width:2rem;");
+  homeBtn.textContent = "book a bubble!";
 
   homeHeroLogo.classList.add("home-hero-logo");
   homeHeroLogoThe.classList.add("home-hero-logo-the");
@@ -27,6 +29,7 @@ function fillHome() {
   homeHero.classList.add("home-hero");
   homeContainer.classList.add("home-container");
   homeText.classList.add("home-text");
+  homeBtn.classList.add("home-btn");
 
   homeHeroLogo.appendChild(homeHeroLogoThe);
   homeHeroLogo.appendChild(homeHeroLogoBobaCube);
@@ -35,5 +38,6 @@ function fillHome() {
   homeHero.appendChild(homeHeroText);
   homeContainer.appendChild(homeHero);
   homeContainer.appendChild(homeText);
+  homeContainer.appendChild(homeBtn);
   content.appendChild(homeContainer);
 }
