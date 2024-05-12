@@ -1,5 +1,6 @@
 import bobaImg from "../images/boba.png";
-export { fillHome };
+import bubbleTea from "../images/bubble-tea-img.jpg";
+export { fillHome, fillHomeOffer };
 
 const content = document.querySelector("#content");
 
@@ -40,4 +41,18 @@ function fillHome() {
   homeContainer.appendChild(homeText);
   homeContainer.appendChild(homeBtn);
   content.appendChild(homeContainer);
+}
+
+function fillHomeOffer() {
+  const homeContainer = document.querySelector(".home-container");
+  const offerCard = document.createElement("div");
+  const offerCardText = document.createElement("div");
+
+  offerCardText.textContent =
+    "Beat the summer heat! 40% off on Tropical Swish and Blueberry Blast boba cups!";
+  offerCardText.classList.add("offer-card-text");
+  offerCard.classList.add("offer-card");
+
+  offerCard.appendChild(offerCardText);
+  homeContainer.appendChild(offerCard);
 }
