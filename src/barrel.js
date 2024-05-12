@@ -1,2 +1,2 @@
-export { fillHero, fillButtons, styleButtons, activateHome } from './base.js';
-export { fillHome } from './pages/home.js'
+export { fillHero, fillButtons, styleButtons, activateHome } from "./base.js";
+export { fillHome, fillHomeOffer } from "./pages/home.js";
