@@ -10,15 +10,19 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
 }
 
 #content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  height: 100vh;
   gap: 2rem;
+  padding: 2rem 10vw 2rem 10vw;
+  background-color: var(--white);
 }
 
 .hero {
@@ -79,9 +83,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   font-size: 1.1rem;
-  padding: 3rem;
-  height: 40rem;
-  width: 40rem;
+  width: 100%;
   gap: 6rem;
   text-align: center;
   font-size: 1.3rem;
@@ -139,4 +141,25 @@ button:hover {
 .home-btn:active {
   transform: translateX(0.3rem) translateY(0.3rem);
   box-shadow: inset 0 -4rem 0 0 var(--primary);
+}
+
+.offer-card {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  width: 40rem;
+  border-radius: 0.2rem;
+  background-color: var(--secondary);
+  background-image: url(./images/bubble-tea-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.offer-card-text {
+  margin-left: 3.6rem;
+  padding: 1rem 3rem 1rem 3rem;
+  width: 26rem;
+  border: 0.2rem solid var(--white);
+  border-radius: 0.2rem;
 }
