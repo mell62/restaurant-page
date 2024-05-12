@@ -47,12 +47,28 @@ function fillHomeOffer() {
   const homeContainer = document.querySelector(".home-container");
   const offerCard = document.createElement("div");
   const offerCardText = document.createElement("div");
+  const offerCardTextFirst = document.createElement("span");
+  const offerCardTextLast = document.createElement("span");
+  const offerCardTextTropical = document.createElement("span");
+  const offerCardTextBlueberry = document.createElement("span");
+  const offerCardTextAnd = document.createElement("span");
 
-  offerCardText.textContent =
-    "Beat the summer heat! 40% off on Tropical Swish and Blueberry Blast boba cups!";
+  offerCardTextFirst.textContent = "Beat the summer heat! 40% off on";
+  offerCardTextTropical.textContent = " Tropical Swish ";
+  offerCardTextAnd.textContent = "and";
+  offerCardTextBlueberry.textContent = " Blueberry Blast ";
+  offerCardTextLast.textContent = "boba cups!";
+
+  offerCardTextTropical.classList.add("tropical");
+  offerCardTextBlueberry.classList.add("blueberry");
   offerCardText.classList.add("offer-card-text");
   offerCard.classList.add("offer-card");
 
+  offerCardText.appendChild(offerCardTextFirst);
+  offerCardText.appendChild(offerCardTextTropical);
+  offerCardText.appendChild(offerCardTextAnd);
+  offerCardText.appendChild(offerCardTextBlueberry);
+  offerCardText.appendChild(offerCardTextLast);
   offerCard.appendChild(offerCardText);
   homeContainer.appendChild(offerCard);
 }
