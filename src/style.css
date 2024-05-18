@@ -79,7 +79,8 @@ button:hover {
   transition: 0.2s ease-in-out;
 }
 
-.home-container {
+.home-container,
+.menu-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,4 +197,31 @@ button:hover {
 .blueberry {
   color: var(--primary);
   font-weight: 600;
+}
+
+.menu-card {
+  background-color: var(--secondary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.menu-price,
+.menu-price-3 {
+  border-left: solid 0.15rem var(--white);
+  padding-left: 5rem;
+}
+
+.menu-price-3 {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 2.4rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--tertiary);
 }
