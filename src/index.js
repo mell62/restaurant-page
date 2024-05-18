@@ -7,6 +7,7 @@ import {
   activateHome,
   fillHome,
   fillHomeOffer,
+  fillMenuCards,
 } from "./barrel.js";
 
 fillHero();
@@ -32,8 +33,12 @@ const contactBtn = Array.from(navButtons).filter(
 
 homeBtn[0].addEventListener("click", () => {
   const homeContainer = document.querySelector(".home-container");
+  const menuContainer = document.querySelector(".menu-container");
   if (document.querySelector(".home-container")) {
     content.removeChild(homeContainer);
+  }
+  if (document.querySelector(".menu-container")) {
+    content.removeChild(menuContainer);
   }
   fillHome();
   fillHomeOffer();
@@ -41,14 +46,23 @@ homeBtn[0].addEventListener("click", () => {
 
 menuBtn[0].addEventListener("click", () => {
   const homeContainer = document.querySelector(".home-container");
+  const menuContainer = document.querySelector(".menu-container");
   if (document.querySelector(".home-container")) {
     content.removeChild(homeContainer);
   }
+  if (document.querySelector(".menu-container")) {
+    content.removeChild(menuContainer);
+  }
+  fillMenuCards();
 });
 
 contactBtn[0].addEventListener("click", () => {
   const homeContainer = document.querySelector(".home-container");
+  const menuContainer = document.querySelector(".menu-container");
   if (document.querySelector(".home-container")) {
     content.removeChild(homeContainer);
+  }
+  if (document.querySelector(".menu-container")) {
+    content.removeChild(menuContainer);
   }
 });
