@@ -1,5 +1,4 @@
 import bobaImg from "../images/boba.png";
-import bubbleTea from "../images/bubble-tea-img.jpg";
 export { fillHome, fillHomeOffer };
 
 const content = document.querySelector("#content");
