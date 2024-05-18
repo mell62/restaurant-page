@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  width: 52rem;
   gap: 2rem;
   padding: 2rem 10vw 2rem 10vw;
   background-color: var(--white);
