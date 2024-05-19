@@ -1,9 +1,40 @@
-export { fillMenuCards };
+import bobaImg from "../images/menu-bubbles.png";
+export { fillMenuCards, fillMenuHero };
 
 const content = document.querySelector("#content");
 
-function fillMenuCards() {
+function fillMenuHero() {
   const menuContainer = document.createElement("div");
+  const menuHero = document.createElement("div");
+  const menuHeroText = document.createElement("div");
+  const menuHeroLogo = document.createElement("div");
+  const menuHeroLogoThe = document.createElement("div");
+  const menuHeroLogoBobaCube = document.createElement("div");
+  const bobaIcon = document.createElement("img");
+
+  menuHeroText.textContent = "delights";
+  menuHeroLogoThe.textContent = "the";
+  menuHeroLogoBobaCube.textContent = "boba cube.";
+  bobaIcon.src = bobaImg;
+  bobaIcon.setAttribute("style", "width:2rem; height:auto;");
+
+  menuHeroLogo.classList.add("menu-hero-logo");
+  menuHeroLogoThe.classList.add("menu-hero-logo-the");
+  menuHeroLogoBobaCube.classList.add("menu-hero-logo-bobacube");
+  menuHero.classList.add("menu-hero");
+  menuContainer.classList.add("menu-container");
+
+  menuHeroLogo.appendChild(menuHeroLogoThe);
+  menuHeroLogo.appendChild(menuHeroLogoBobaCube);
+  menuHeroLogo.appendChild(bobaIcon);
+  menuHero.appendChild(menuHeroLogo);
+  menuHero.appendChild(menuHeroText);
+  menuContainer.appendChild(menuHero);
+  content.appendChild(menuContainer);
+}
+
+function fillMenuCards() {
+  const menuContainer = document.querySelector(".menu-container");
   const card1 = document.createElement("div");
   const card2 = document.createElement("div");
   const card3 = document.createElement("div");
@@ -34,7 +65,6 @@ function fillMenuCards() {
   price3.classList.add("menu-price-3");
   card4.classList.add("menu-card");
   price4.classList.add("menu-price");
-  menuContainer.classList.add("menu-container");
 
   card1.appendChild(price1);
   menuContainer.appendChild(card1);
@@ -46,5 +76,4 @@ function fillMenuCards() {
   menuContainer.appendChild(card3);
   card4.appendChild(price4);
   menuContainer.appendChild(card4);
-  content.appendChild(menuContainer);
 }
