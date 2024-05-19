@@ -198,6 +198,7 @@ button:hover {
 
 .menu-container {
   text-align: start;
+  gap: 2rem;
 }
 
 .menu-hero {
