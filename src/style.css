@@ -251,6 +251,7 @@ button:hover {
 
 .menu-price,
 .menu-price-3 {
+  font-weight: 700;
   text-align: end;
   border-left: solid 0.15rem var(--primary);
   width: 7.5rem;
@@ -263,6 +264,17 @@ button:hover {
 }
 
 .original-price {
-  text-decoration: line-through;
+  position: relative;
+  font-weight: 700;
   color: var(--tertiary);
+}
+
+.original-price::before {
+  content: "";
+  position: absolute;
+  background-color: var(--text);
+  height: 0.1rem;
+  width: 3rem;
+  top: 50%;
+  transform: rotate(160deg);
 }
