@@ -39,13 +39,12 @@ body {
 }
 
 .hero-text,
-.home-hero-logo {
+.home-hero-logo,
+.menu-hero-logo {
   font-family: var(--logo-font);
   font-weight: 300;
   font-size: 1.2rem;
   color: var(--primary);
-  line-height: 1.2rem;
-  margin-left: -0.5rem;
 }
 
 nav {
@@ -95,11 +94,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.1rem;
   font-size: 1.4rem;
   font-weight: 500;
   width: 100%;
-  line-height: 0rem;
 }
 
 .home-hero-logo {
@@ -118,7 +115,7 @@ button:hover {
   width: 30%;
   height: 0.15rem;
   left: 0;
-  top: 75%;
+  top: 60%;
   background-color: var(--primary);
 }
 
@@ -128,7 +125,7 @@ button:hover {
   width: 30%;
   height: 0.15rem;
   right: 0;
-  top: 75%;
+  top: 60%;
   background-color: var(--primary);
 }
 
@@ -197,6 +194,48 @@ button:hover {
 .blueberry {
   color: var(--primary);
   font-weight: 600;
+}
+
+.menu-container {
+  text-align: start;
+}
+
+.menu-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  justify-content: flex-end;
+}
+
+.menu-hero-logo {
+  display: flex;
+  font-size: 1.8rem;
+  color: var(--tertiary);
+  padding-right: 0.2rem;
+}
+
+.menu-hero-logo::after {
+  content: "";
+  position: absolute;
+  width: 63%;
+  height: 0.15rem;
+  right: 0;
+  top: 30%;
+  background-color: var(--primary);
+}
+
+.menu-hero-logo-the {
+  color: var(--text);
+  padding-right: 0.4rem;
+  align-self: flex-end;
+}
+
+.menu-hero-logo-bobacube {
+  padding-right: 0.2rem;
+  align-self: flex-end;
 }
 
 .menu-card {
