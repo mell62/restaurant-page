@@ -8,6 +8,7 @@ import {
   fillHome,
   fillHomeOffer,
   fillMenuCards,
+  fillMenuHero,
 } from "./barrel.js";
 
 fillHero();
@@ -53,6 +54,7 @@ menuBtn[0].addEventListener("click", () => {
   if (document.querySelector(".menu-container")) {
     content.removeChild(menuContainer);
   }
+  fillMenuHero();
   fillMenuCards();
 });
 
