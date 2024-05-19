@@ -45,6 +45,16 @@ function fillMenuCards() {
   const price4 = document.createElement("div");
   const originalPrice1 = document.createElement("div");
   const discountedPrice1 = document.createElement("div");
+  const card5 = document.createElement("div");
+  const card6 = document.createElement("div");
+  const card7 = document.createElement("div");
+  const card8 = document.createElement("div");
+  const price5 = document.createElement("div");
+  const price6 = document.createElement("div");
+  const price7 = document.createElement("div");
+  const price8 = document.createElement("div");
+  const originalPrice2 = document.createElement("div");
+  const discountedPrice2 = document.createElement("div");
 
   card1.textContent = "Vanilla Velvet";
   price1.textContent = "$3.00";
@@ -55,6 +65,15 @@ function fillMenuCards() {
   discountedPrice1.textContent = "$2.10";
   card4.textContent = "Chocolate Chai";
   price4.textContent = "$3.50";
+  card5.textContent = "Coconut Dream";
+  price5.textContent = "$3.50";
+  card6.textContent = "Blueberry Blast";
+  originalPrice2.textContent = "$3.50";
+  discountedPrice2.textContent = "$2.10";
+  card7.textContent = "Peachy Keen";
+  price7.textContent = "$3.99";
+  card8.textContent = "Matcha Madness";
+  price8.textContent = "$3.99";
 
   card1.classList.add("menu-card");
   price1.classList.add("menu-price");
@@ -65,6 +84,15 @@ function fillMenuCards() {
   price3.classList.add("menu-price-3");
   card4.classList.add("menu-card");
   price4.classList.add("menu-price");
+  card5.classList.add("menu-card");
+  price5.classList.add("menu-price");
+  card6.classList.add("menu-card");
+  price6.classList.add("menu-price-3");
+  originalPrice2.classList.add("original-price");
+  card7.classList.add("menu-card");
+  price7.classList.add("menu-price");
+  card8.classList.add("menu-card");
+  price8.classList.add("menu-price");
 
   card1.appendChild(price1);
   menuContainer.appendChild(card1);
@@ -76,4 +104,14 @@ function fillMenuCards() {
   menuContainer.appendChild(card3);
   card4.appendChild(price4);
   menuContainer.appendChild(card4);
+  card5.appendChild(price5);
+  menuContainer.appendChild(card5);
+  card6.appendChild(price6);
+  price6.appendChild(originalPrice2);
+  price6.appendChild(discountedPrice2);
+  menuContainer.appendChild(card6);
+  card7.appendChild(price7);
+  menuContainer.appendChild(card7);
+  card8.appendChild(price8);
+  menuContainer.appendChild(card8);
 }
