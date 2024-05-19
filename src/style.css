@@ -243,11 +243,17 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 0.2rem;
   font-size: 1.1rem;
   border-top: solid 0.2rem var(--tertiary);
   font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-card:hover {
+  background-color: #e2caca;
+  cursor: pointer;
 }
 
 .menu-price,
