@@ -9,6 +9,7 @@ import {
   fillHomeOffer,
   fillMenuCards,
   fillMenuHero,
+  fillContactHero,
 } from "./barrel.js";
 
 fillHero();
@@ -35,11 +36,15 @@ const contactBtn = Array.from(navButtons).filter(
 homeBtn[0].addEventListener("click", () => {
   const homeContainer = document.querySelector(".home-container");
   const menuContainer = document.querySelector(".menu-container");
+  const contactContainer = document.querySelector(".contact-container");
   if (document.querySelector(".home-container")) {
     content.removeChild(homeContainer);
   }
   if (document.querySelector(".menu-container")) {
     content.removeChild(menuContainer);
+  }
+  if (document.querySelector(".contact-container")) {
+    content.removeChild(contactContainer);
   }
   fillHome();
   fillHomeOffer();
@@ -48,11 +53,15 @@ homeBtn[0].addEventListener("click", () => {
 menuBtn[0].addEventListener("click", () => {
   const homeContainer = document.querySelector(".home-container");
   const menuContainer = document.querySelector(".menu-container");
+  const contactContainer = document.querySelector(".contact-container");
   if (document.querySelector(".home-container")) {
     content.removeChild(homeContainer);
   }
   if (document.querySelector(".menu-container")) {
     content.removeChild(menuContainer);
+  }
+  if (document.querySelector(".contact-container")) {
+    content.removeChild(contactContainer);
   }
   fillMenuHero();
   fillMenuCards();
@@ -61,10 +70,15 @@ menuBtn[0].addEventListener("click", () => {
 contactBtn[0].addEventListener("click", () => {
   const homeContainer = document.querySelector(".home-container");
   const menuContainer = document.querySelector(".menu-container");
+  const contactContainer = document.querySelector(".contact-container");
   if (document.querySelector(".home-container")) {
     content.removeChild(homeContainer);
   }
   if (document.querySelector(".menu-container")) {
     content.removeChild(menuContainer);
   }
+  if (document.querySelector(".contact-container")) {
+    content.removeChild(contactContainer);
+  }
+  fillContactHero();
 });
