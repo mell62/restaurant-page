@@ -40,7 +40,8 @@ body {
 
 .hero-text,
 .home-hero-logo,
-.menu-hero-logo {
+.menu-hero-logo,
+.contact-hero-logo {
   font-family: var(--logo-font);
   font-weight: 300;
   font-size: 1.2rem;
@@ -79,7 +80,8 @@ button:hover {
 }
 
 .home-container,
-.menu-container {
+.menu-container,
+.contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,21 +203,21 @@ button:hover {
   gap: 2rem;
 }
 
-.menu-hero {
+.menu-hero,
+.contact-hero {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   font-size: 1.4rem;
   font-weight: 500;
-  justify-content: flex-end;
 }
 
-.menu-hero-logo {
+.menu-hero-logo,
+.contact-hero-logo {
   display: flex;
   font-size: 1.8rem;
   color: var(--tertiary);
-  padding-right: 0.2rem;
 }
 
 .menu-hero-logo::after {
@@ -228,13 +230,15 @@ button:hover {
   background-color: var(--primary);
 }
 
-.menu-hero-logo-the {
+.menu-hero-logo-the,
+.contact-hero-logo-the {
   color: var(--text);
   padding-right: 0.4rem;
   align-self: flex-end;
 }
 
-.menu-hero-logo-bobacube {
+.menu-hero-logo-bobacube,
+.contact-hero-logo-bobacube {
   padding-right: 0.2rem;
   align-self: flex-end;
 }
@@ -281,6 +285,29 @@ button:hover {
   background-color: var(--text);
   height: 0.1rem;
   width: 3rem;
-  top: 50%;
+  top: 55%;
   transform: rotate(160deg);
+}
+
+.contact-hero {
+  align-items: end;
+}
+
+.contact-hero-logo-the {
+  padding-left: 0.2rem;
+}
+
+.contact-hero-logo-bobacube {
+  padding-right: 0rem;
+  color: var(--primary);
+}
+
+.contact-hero-logo::before {
+  content: "";
+  position: absolute;
+  width: 63%;
+  height: 0.15rem;
+  left: 0;
+  top: 36%;
+  background-color: var(--tertiary);
 }
