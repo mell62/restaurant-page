@@ -10,6 +10,7 @@ import {
   fillMenuCards,
   fillMenuHero,
   fillContactHero,
+  fillContactCard,
 } from "./barrel.js";
 
 fillHero();
@@ -81,4 +82,5 @@ contactBtn[0].addEventListener("click", () => {
     content.removeChild(contactContainer);
   }
   fillContactHero();
+  fillContactCard();
 });
