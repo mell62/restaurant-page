@@ -4,7 +4,7 @@ This is the boba cube, a web application of a restaurant page which serves bubbl
 
 Check it out :point_right:[here!](https://mell62.github.io/restaurant-page/):point_left:
 
-![webpage-screenshot](src/images/screenshot.png)
+![webpage-screenshot](./src/images/screenshot.png)
 
 ## :mag: Features
 
