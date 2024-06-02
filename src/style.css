@@ -348,3 +348,32 @@ button:hover {
 .contact-card-number:hover {
   cursor: pointer;
 }
+
+.contact-email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-email-btn {
+  appearance: none;
+  transition: 0.5s ease-in-out;
+  border-radius: 2rem;
+  border: 0.15rem solid var(--primary);
+  padding: 1.1rem 1.8rem 1.1rem 1.8rem;
+  box-shadow: inset 0 0 0 0 var(--primary), 0.3rem 0.3rem var(--secondary);
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: max-content;
+}
+
+.contact-email-btn:hover {
+  box-shadow: inset 0 0 0 2rem var(--primary), 0.3rem 0.3rem var(--secondary);
+  color: var(--white);
+}
+
+.contact-email-btn:active {
+  transform: translateX(0.3rem) translateY(0.3rem);
+  box-shadow: inset 0 -4rem 0 0 var(--primary);
+}
