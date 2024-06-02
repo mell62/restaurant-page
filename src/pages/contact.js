@@ -1,6 +1,6 @@
 import contactHeroImg from "../images/contact-bubbles.png";
 
-export { fillContactHero, fillContactCard };
+export { fillContactHero, fillContactCard, fillEmailBtn };
 
 const content = document.querySelector("#content");
 
@@ -65,4 +65,23 @@ function fillContactCard() {
   contactCard.appendChild(contactCardImgContainer);
   contactCard.appendChild(contactCardTextContainer);
   contactContainer.appendChild(contactCard);
+}
+
+function fillEmailBtn() {
+  const contactContainer = document.querySelector(".contact-container");
+  const emailContainer = document.createElement("div");
+  const emailText = document.createElement("div");
+  const emailBtn = document.createElement("button");
+
+  emailText.textContent =
+    "Or - email us! We will respond to you like a bubble burst!";
+  emailBtn.textContent = "🖂 Letters!";
+
+  emailContainer.classList.add("contact-email-container");
+  emailText.classList.add("contact-email-text");
+  emailBtn.classList.add("contact-email-btn");
+
+  emailContainer.appendChild(emailText);
+  emailContainer.appendChild(emailBtn);
+  contactContainer.appendChild(emailContainer);
 }
