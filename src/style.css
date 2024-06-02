@@ -19,8 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   width: calc(50vw + 20rem);
+  min-height: 100vh;
   gap: 2rem;
   padding: 2rem 6rem 2rem 6rem;
   background-color: var(--white);
