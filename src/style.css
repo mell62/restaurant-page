@@ -375,5 +375,5 @@ button:hover {
 
 .contact-email-btn:active {
   transform: translateX(0.3rem) translateY(0.3rem);
-  box-shadow: inset 0 -4rem 0 0 var(--primary);
+  box-shadow: inset 0 0 0 2rem var(--primary);
 }
