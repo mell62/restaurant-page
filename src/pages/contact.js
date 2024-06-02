@@ -1,6 +1,6 @@
 import contactHeroImg from "../images/contact-bubbles.png";
 
-export { fillContactHero };
+export { fillContactHero, fillContactCard };
 
 const content = document.querySelector("#content");
 
@@ -32,4 +32,37 @@ function fillContactHero() {
   contactHero.appendChild(contactHeroText);
   contactContainer.appendChild(contactHero);
   content.appendChild(contactContainer);
+}
+
+function fillContactCard() {
+  const contactContainer = document.querySelector(".contact-container");
+  const contactCard = document.createElement("div");
+  const contactCardTextContainer = document.createElement("div");
+  const contactCardImgContainer = document.createElement("div");
+  const contactCardTextFirst = document.createElement("div");
+  const contactCardTextAddress = document.createElement("div");
+  const contactCardTextSecond = document.createElement("div");
+  const contactCardTextNumber = document.createElement("div");
+
+  contactCardTextFirst.textContent =
+    "Happy to welcome you anytime, except tuesdays!😋";
+  contactCardTextAddress.textContent =
+    "🧭 221B, Baker Street, London, United Kingdom";
+  contactCardTextSecond.textContent =
+    "We are too far away? Contact us for free deliveries!";
+  contactCardTextNumber.textContent = "📞 +44 4242 828282";
+
+  contactCard.classList.add("contact-card");
+  contactCardTextContainer.classList.add("contact-card-text-container");
+  contactCardImgContainer.classList.add("contact-card-img");
+  contactCardTextAddress.classList.add("contact-card-address");
+  contactCardTextNumber.classList.add("contact-card-number");
+
+  contactCardTextContainer.appendChild(contactCardTextFirst);
+  contactCardTextContainer.appendChild(contactCardTextAddress);
+  contactCardTextContainer.appendChild(contactCardTextSecond);
+  contactCardTextContainer.appendChild(contactCardTextNumber);
+  contactCard.appendChild(contactCardImgContainer);
+  contactCard.appendChild(contactCardTextContainer);
+  contactContainer.appendChild(contactCard);
 }
